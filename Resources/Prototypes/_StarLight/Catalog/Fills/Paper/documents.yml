@@ -85,7 +85,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentExperimentReport
-  name: Experiment report
+  name: Experiment Report
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -94,12 +94,22 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentDisposalReport
-  name: Disposal report
+  name: Disposal Report
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
       content: doc-text-printer-disposal-report
       
+
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentArrestReport
+  name: Arrest Report
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-arrest-report
+
 # Statements
 
 - type: entity
@@ -132,7 +142,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentAccessRequestStatement
-  name: Access request statement
+  name: Access Request Statement
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -141,7 +151,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentEquipmentRequestStatement
-  name: Equipment request statement
+  name: Equipment Request Statement
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -161,7 +171,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentEvacuationShuttleRequest
-  name: Evacuation shuttle request
+  name: Evacuation Shuttle Request
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -170,7 +180,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentShuttleRegistrationRequest
-  name: Shuttle registration request
+  name: Shuttle Registration Request
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -179,16 +189,16 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestCallCentCommMembers
-  name: Request to call CentComm members
+  name: Request to call CentComm Members
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
-      content: doc-text-printer-request-call-members-centcomm
+      content: doc-text-printer-request-call-centcomm-members
       
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestRequestEstablishThreatLevel
-  name: Request to establish threat level
+  name: Request to Establish Threat Level
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -197,7 +207,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestChangeSalary
-  name: Request for salary change
+  name: Request for Salary Change
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -206,7 +216,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestForNonlistedEmployment
-  name: Request for non-listed employment
+  name: Request for Non-Listed Employment
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -215,7 +225,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestForPromotion
-  name: Request for promotion
+  name: Request for Promotion
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -224,7 +234,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestDocuments
-  name: Request for the provision of documents
+  name: Request for the Provision of Documents
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -233,7 +243,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestEuthanasia
-  name: Request for euthanasia
+  name: Request for Euthanasia
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -242,7 +252,7 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestConstructionWork
-  name: Request for construction works
+  name: Request for Construction Works
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
@@ -251,19 +261,176 @@
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentRequestModernization
-  name: Request for modernization
+  name: Request for Modernization
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
       content: doc-text-printer-request-modernization
       
-# Complaintst
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentRequestERT
+  name: Request for ERT
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-request-ert
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentProductOrder
+  name: Product Order
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-product-order
+# Complaints
 
 - type: entity
   parent: PrintedDocument
   id: PrintedDocumentComplaintViolationLaborRules
-  name: Complaint for violation of labor order
+  name: Complaint for Violation of Labor Order
   categories: [ HideSpawnMenu ]
   components:
     - type: Paper
       content: doc-text-printer-complaint-violation-labor-rules
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentComplaintOffense
+  name: Complaint about an offense
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-offense-complaint
+      
+# Permissions
+
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentPermissionEquipment
+  name: Authorization to use equipment
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-permission-equipment    
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentSearchPermission
+  name: Authorization to Search
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-search-permission
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentPermissionToCarryWeapons
+  name: Permission to Carry Weapons
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-permission-to-carry-weapons
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentPermissionDisposeBody
+  name: Authorization to Dispose of Body
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-permission-dispose-body
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentConstructionPermit
+  name: Building Permit
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-construction-permit
+     
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentSurgeryConsentPermit
+  name: Surgery Consent Permit
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-surgery-consent-permit
+      
+# OrdersAndInstructions
+
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentDismissalOrder
+  name: Dismissal Order
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-dismissal-order
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentAccessRevocationOrder
+  name: Access Revocation Order
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-access-revocation-order
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentIncentiveOrder
+  name: Incentive Order
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-incentive-order
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentPrisonerParoleOrder
+  name: Prisoner Parole Order
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-prisoner-parole-order
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentOrderRecognizingReasonablenessCreature
+  name: An order recognizing the Reasonableness of the Creature
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-order-recognizing-reasonableness-creature
+      
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentMedicalInterventionOrder
+  name: Medical Intervention Order
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-medical-intervention-order
+
+- type: entity
+  parent: PrintedDocument
+  id: PrintedDocumentExecutionDNROrder
+  name: Execution & DNR order
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Paper
+      content: doc-text-printer-execution-dnr-order
+
+- type: entity
+  id: BoxFolderClipboardFilled
+  suffix: Filled
+  parent: BoxFolderClipboard
+  components:
+  - type: StorageFill
+    contents:
+      - id: Paper
+        amount: 24

@@ -78,13 +78,14 @@
   - PrintedDocumentObjectInvestigationReportRecipe
   - PrintedDocumentExperimentReportRecipe
   - PrintedDocumentDisposalReportRecipe
-# Statements
+  - PrintedDocumentArrestReportRecipe
+  # Statements
   - PrintedDocumentStatementAppointmentInterimChapterRecipe
   - PrintedDocumentEmploymentStatementRecipe
   - PrintedDocumentResignationStatementRecipe
   - PrintedDocumentAccessRequestStatementRecipe
   - PrintedDocumentEquipmentRequestStatementRecipe
-# InquiriesAndAppeals
+  # InquiriesAndAppeals
   - PrintedDocumentInvocationRecipe
   - PrintedDocumentEvacuationShuttleRequestRecipe
   - PrintedDocumentShuttleRegistrationRequestRecipe
@@ -96,12 +97,33 @@
   - PrintedDocumentRequestEuthanasiaRecipe
   - PrintedDocumentRequestConstructionWorkRecipe
   - PrintedDocumentRequestModernizationRecipe
-# Complaintst
+  - PrintedDocumentRequestERTRecipe
+  # Complaints
   - PrintedDocumentComplaintViolationLaborRulesRecipe
-#  - type: EmagLatheRecipes
-#    emagStaticRecipes:
-#        - PrintedDocumentErrorLoadingFormHeaderRecipe
-#        - PrintedDocumentNoticeOfLiquidationRecipe
-#        - PrintedDocumentBusinessDealRecipe
-#        - PrintedDocumentNoteBeginningMilitaryActionsRecipe
-#        - PrintedDocumentReportAccomplishmentGoalsRecipe
+  - PrintedDocumentComplaintOffenseRecipe
+  # Permissions
+  - PrintedDocumentPermissionEquipmentRecipe
+  - PrintedDocumentSearchPermissionRecipe
+  - PrintedDocumentPermissionToCarryWeaponsRecipe
+  - PrintedDocumentPermissionDisposeBodyRecipe
+  - PrintedDocumentConstructionPermitRecipe
+  - PrintedDocumentSurgeryConsentPermitRecipe
+  # OrdersAndInstructions
+  - PrintedDocumentDismissalOrderRecipe
+  - PrintedDocumentAccessRevocationOrderRecipe
+  - PrintedDocumentIncentiveOrderRecipe
+  - PrintedDocumentPrisonerParoleOrderRecipe
+  - PrintedDocumentOrderRecognizingReasonablenessCreatureRecipe
+  - PrintedDocumentMedicalInterventionOrderRecipe
+  - PrintedDocumentExecutionDNROrderRecipe
+  # Orders
+  - PrintedDocumentProductOrderRecipe
+
+#- type: latheRecipePack
+#  id: StarlightDocsEmag
+#  recipes:
+#  - PrintedDocumentErrorLoadingFormHeaderRecipe
+#  - PrintedDocumentNoticeOfLiquidationRecipe
+#  - PrintedDocumentBusinessDealRecipe
+#  - PrintedDocumentNoteBeginningMilitaryActionsRecipe
+#  - PrintedDocumentReportAccomplishmentGoalsRecipe
