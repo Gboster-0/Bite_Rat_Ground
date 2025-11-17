@@ -1,22 +1,20 @@
 - type: entity
   name: EP-12 Energy Pistol
-  parent: [ BaseWeaponCustomCellSmall, BaseSecurityContraband ]
+  parent: [BaseWeaponCustomCellSmall, BaseSecurityContraband]
   id: WeaponEnergyCellPistol
   description: An energy pistol that are meant to be an alternative to MK58. One of Nanotrasen’s initiative to cut steel waste without sacrificing stopping power.
   components:
   - type: AmmoCounter
   - type: Item
-    heldPrefix: lethal
+    sprite: _BRatBites/Objects/Weapon/Battery/ep-12energypistol.rsi
   - type: Sprite
     sprite: _BRatBites/Objects/Weapon/Battery/ep-12energypistol.rsi
     layers:
     - state: base
-    - state: icon
-      visible: false
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      visible: false
-      shader: unshaded
       map: ["enum.GunVisualLayers.Mag"]
+      shader: unshaded
   - type: MagazineVisuals
     magState: mag
     steps: 3
@@ -27,6 +25,8 @@
     slots:
     - Belt
     - suitStorage
+  - type: Multishot
+    spreadAddition: 10
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
