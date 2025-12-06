@@ -5124,7 +5124,7 @@ entities:
     - type: Transform
       pos: -39.5,-4.5
       parent: 2
-- proto: AirlockHatchMaintenance
+- proto: AirlockMaint
   entities:
   - uid: 182
     components:
@@ -7257,7 +7257,7 @@ entities:
       parent: 2
     - type: Paper
       content: >-
-        It is said — though rarely, and only by those who stumble upon the oldest echoes of thought — that before stations drifted through the void and before metal felt the warmth of living hands, there was only it. Not a god. Not a mind. Not anything the tongue was meant to shape. It was the pressure behind closed eyelids, the soft dialation at the curviature of vision. It does not speak. Yet the silence weighs the void itself.  Those who first brushed against It did so in dreams. Their bodies slept untouched, stretching toward some horizon that did not exist. They woke trembling, unable to forget the awful certainty that something vast and patient had regarded them. Some woke with memories borrowed, thoughts that were not their own. They gathered and were Veiled, for they believed It did not hide — it was the universe that wore masks. Time seemed thinner in its presence, yet it pressed no urgency. Words faltered before such immensity and thoughts often drifted like untethered stars. The concept of self seemed fragile, a membrane pressing against something infinite and unformed. They had glimpsed the edges of everything, and the edges were not kind, not cruel, not comprehensible. 
+        It is said — though rarely, and only by those who stumble upon the oldest echoes of thought — that before stations drifted through the void and before metal felt the warmth of living hands, there was only it. Not a god. Not a mind. Not anything the tongue was meant to shape. It was the pressure behind closed eyelids, the soft dialation at the curviature of vision. It does not speak. Yet the silence weighs the void itself.  Those who first brushed against It did so in dreams. Their bodies slept untouched, stretching toward some horizon that did not exist. They woke trembling, unable to forget the awful certainty that something vast and patient had regarded them. Some woke with memories borrowed, thoughts that were not their own. They gathered and were Veiled, for they believed It did not hide — it was the universe that wore masks. Time seemed thinner in its presence, yet it pressed no urgency. Words faltered before such immensity and thoughts often drifted like untethered stars. The concept of self seemed fragile, a membrane pressing against something infinite and unformed. They had glimpsed the edges of everything, and the edges were not kind, not cruel, not comprehensible.
 
 
         They simply were.
@@ -28610,34 +28610,6 @@ entities:
           - 4562
           - 4574
           - 4586
-          - 4588
-          - 4603
-          - 4605
-          - 4723
-          - 4848
-          - 4853
-          - 4854
-          - 4855
-          - 4856
-          - 4857
-          - 4858
-          - 4859
-          - 4860
-          - 5163
-          - 5164
-          - 5165
-          - 5166
-          - 5167
-          - 5168
-          - 5169
-          - 5170
-          - 5171
-          - 5172
-          - 5173
-          - 5174
-          - 5175
-          - 5176
-          - 5177
 - proto: ClothingBeltChampion
   entities:
   - uid: 4489
